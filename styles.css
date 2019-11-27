@@ -127,7 +127,7 @@ section#spacing {
 }
 
 #artist_title {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .music_container {
@@ -197,9 +197,19 @@ li {
     text-decoration: none;
 }
 
-a {
-    color: black;
+a.hvr-icon-fade {
     text-decoration: none !important;
+    color: black;
+}
+
+a.scroll {
+    background-color: #A1572F;
+    color: #eef;
+    text-decoration: none !important;
+}
+
+ul#inner_navbar {
+    color: #de32b0
 }
 
 /* ScrollBar */
@@ -207,7 +217,7 @@ a {
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: #000000;
+    background-color: #02253d;
 }
 
 /* Track */
@@ -265,4 +275,9 @@ a {
 .hvr-rotate:active {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
+}
+
+
+audio {
+    color: #80fe73
 }

@@ -1,13 +1,54 @@
 // Making default api route
 let apiRoot = "https://spotify-apii.herokuapp.com/songs/"
 
+// window.onscroll = () => {
+//     const nav = $('div#navbar');
+//     if (this.scrollY <= 2) {
+//         nav.className = ''
+//     };
+//     else nav.className = 'scroll';
+// };
+
+// window.onscroll = function () {
+//     const nav = document.querySelector('a.hvr-icon-fade');
+//     if (this.scrollY <= 3) {
+//         nav.className = '';
+//         console.log(this.scrollY)
+//     } else {
+//         nav.className = 'scroll'
+//     }
+// }
+
+// window.onscroll = () => {
+//     const nav = document.querySelector('a.hvr-icon-fade');
+//     if (this.scrollY <= 10) nav.className = '', console.log(this.scrollY);
+//     else nav.className = 'scroll', console.log(this.scrollY);
+// };
+
+$(document).ready(function () {
+    var scroll_pos = 0;
+    $(document).scroll(function () {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 280) {
+            $("ul#inner_navbar").css('background-color', 'transparent');
+            $("a.hvr-icon-fade").css('color', 'white');
+        } else {
+            $("ul#inner_navbar").css('background-color', 'transparent');
+            $("a.hvr-icon-fade").css('color', 'black');
+        }
+    });
+});
+
+
+
 // Making a onclick event for my spotify button that puts the value of event.target inside a var called name
 $("#spotify_button").on('click', (event) => {
     let name = $(event.target).attr("name")
     console.log(name)
 
+    $("div#inner_music").empty()
     // append apiRoot URL + the name that is found in the attribute "name" with a limit of 10
-    let url = apiRoot + name + "/5"
+    let url = apiRoot + name + "/10"
 
     // Making a get request to the api and saves the data inside response
     $.get(url, (response) => {
@@ -38,8 +79,11 @@ $("#spotify_button").on('click', (event) => {
             $("#artist_title").html(`Songs Featuring ${artist}`)
 
 
-        }
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#artist_title").offset().top
+            }, 1);
 
+        }
 
     })
 })
