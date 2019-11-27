@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Spotify button</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="resources/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/5ad187a877.js" crossorigin="anonymous"></script>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="contain">
+        <div id="header">
+            <div id="navbar">
+                <ul id="inner_navbar">
+                    <a class="hvr-icon-fade" href="index.html">
+                        <li><i class="fas fa-home hvr-icon"></i> Home</li>
+                    </a>
+                    <li>|</li>
+                    <a class="hvr-icon-fade" href="music.html">
+                        <li><i class="fas fa-compact-disc hvr-icon"></i> Music</li>
+                    </a>
+                    <li>|</li>
+                    <a class="hvr-icon-fade" href="about.html">
+                        <li><i class="fas fa-info hvr-icon"></i> About</li>
+                    </a>
+                </ul>
+            </div>
+            <div id="header_content">
+                <h1 class="shiny animated fadeInLeft" id="title">Spotify Button</h1>
+            </div>
+        </div>
+        <div id="song_container"></div>
+
+        <a id="addHref"><button id="spotify_button" name="ASAP Rocky">GET SONGS <br />NOW &#128526;</button></a>
+        <div id="logo"><img id="inner_logo" src="resources/design.png"></div>
+        <a href="https://open.spotify.com/">
+            <div id="logo"><img id="inner_logo2" class="hvr-shrink" src="resources/spotify2.png"></div>
+        </a>
+        <div><img class="hvr-rotate" style="position: absolute;right: 9px; bottom: 24px;" src="resources/click_me.png">
+        </div>
+        <section id="spacing">
+            <div id="music_title">
+                <h4 id="artist_title"></h4>
+            </div>
+        </section>
+        <section id="music_container">
+            <div id="inner_music"></div>
+        </section>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
