@@ -82,14 +82,12 @@ li {
     padding: 20px;
 }
 
-
 #spotify_button:hover {
     background-color: #1ed760;
     cursor: pointer;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 
 }
-
 
 #inner_logo {
     width: 660px;
@@ -256,7 +254,6 @@ ul#inner_navbar {
     transition: background-position 2000ms ease-out;
 }
 
-
 /* Rotate */
 .hvr-rotate {
     display: inline-block;
@@ -275,9 +272,4 @@ ul#inner_navbar {
 .hvr-rotate:active {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
-}
-
-
-audio {
-    color: #80fe73
 }
