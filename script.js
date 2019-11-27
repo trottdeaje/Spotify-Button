@@ -1,5 +1,5 @@
 // Making default api route
-let apiRoot = "http://spotify-apii.herokuapp.com/songs/"
+let apiRoot = "https://spotify-apii.herokuapp.com/songs/"
 
 // Making a onclick event for my spotify button that puts the value of event.target inside a var called name
 $("#spotify_button").on('click', (event) => {
