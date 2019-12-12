@@ -70,7 +70,7 @@ $("#spotify_button").on('click', (event) => {
 
 
             $("div#inner_music").attr({
-                style: "border-top:3px red solid;padding-top:20px;display:flex;align-content:center;margin-top:225px;font-family:'circularBold';color:white;background: rgb(89,134,230); background-color: #2b4162;background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);"
+                style: "border-top:3px red solid;padding-top:20px;display:flex;align-content:center;margin-top:370px;font-family:'circularBold';color:white;background: rgb(89,134,230); background-color: #2b4162;background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);"
             }).append(card)
 
             $("#addHref").attr({
