@@ -1,6 +1,30 @@
 // Making default api route
 let apiRoot = "https://spotify-apii.herokuapp.com/songs/"
 
+// window.onscroll = () => {
+//     const nav = $('div#navbar');
+//     if (this.scrollY <= 2) {
+//         nav.className = ''
+//     };
+//     else nav.className = 'scroll';
+// };
+
+// window.onscroll = function () {
+//     const nav = document.querySelector('a.hvr-icon-fade');
+//     if (this.scrollY <= 3) {
+//         nav.className = '';
+//         console.log(this.scrollY)
+//     } else {
+//         nav.className = 'scroll'
+//     }
+// }
+
+// window.onscroll = () => {
+//     const nav = document.querySelector('a.hvr-icon-fade');
+//     if (this.scrollY <= 10) nav.className = '', console.log(this.scrollY);
+//     else nav.className = 'scroll', console.log(this.scrollY);
+// };
+
 $(document).ready(function () {
     var scroll_pos = 0;
     $(document).scroll(function () {
@@ -14,6 +38,8 @@ $(document).ready(function () {
         }
     });
 });
+
+
 
 // Making a onclick event for my spotify button that puts the value of event.target inside a var called name
 $("#spotify_button").on('click', (event) => {
@@ -36,10 +62,12 @@ $("#spotify_button").on('click', (event) => {
             let urlImage = response[index].url
             let artist = response[index].artist
 
+
             let card = $("<div>").attr({
                 class: "card-body",
                 style: "display:flex;flex-wrap:wrap;width:fit-content; height:auto;padding:0px 30px 20px 30px"
             }).html(`<img style="width:300px;height:auto;" src='${urlImage}'><h4 style='width:100%;margin-bottom:0px'>${name}</h4><p margin-top: 0px;><i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i> ${popularity}</p><audio controls src="${previewUrl}" type="audio/mp3></audio">`)
+
 
             $("div#inner_music").attr({
                 style: "border-top:3px red solid;padding-top:20px;display:flex;align-content:center;margin-top:225px;font-family:'circularBold';color:white;background: rgb(89,134,230); background-color: #2b4162;background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);"
@@ -50,9 +78,15 @@ $("#spotify_button").on('click', (event) => {
             })
             $("#artist_title").html(`Songs Featuring ${artist}`)
 
+
             $([document.documentElement, document.body]).animate({
                 scrollTop: $("#artist_title").offset().top
             }, 1);
+
         }
+
     })
 })
+
+//Create a div for each track it finds
+//

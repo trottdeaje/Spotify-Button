@@ -82,12 +82,14 @@ li {
     padding: 20px;
 }
 
+
 #spotify_button:hover {
     background-color: #1ed760;
     cursor: pointer;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 
 }
+
 
 #inner_logo {
     width: 660px;
@@ -207,7 +209,7 @@ a.scroll {
 }
 
 ul#inner_navbar {
-    color: #de32b0
+    color: #ff0000
 }
 
 /* ScrollBar */
@@ -245,7 +247,8 @@ ul#inner_navbar {
     color: rgb(0, 0, 0);
     -webkit-text-fill-color: transparent;
 
-    transition: color 200ms linear;
+    /* transition: color 200ms linear; */
+    transition: background-position 2000ms ease-out;
 }
 
 .shiny:hover {
@@ -253,6 +256,7 @@ ul#inner_navbar {
     color: #ef9671;
     transition: background-position 2000ms ease-out;
 }
+
 
 /* Rotate */
 .hvr-rotate {
@@ -272,4 +276,13 @@ ul#inner_navbar {
 .hvr-rotate:active {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
+}
+
+
+audio {
+    color: #80fe73
+}
+
+#logo {
+    
 }
