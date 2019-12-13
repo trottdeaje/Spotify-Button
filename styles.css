@@ -127,7 +127,9 @@ section#spacing {
 }
 
 #artist_title {
-    margin-bottom: 11px;
+    margin:auto;
+    position: relative;
+    top: 120px;
 }
 
 .music_container {
