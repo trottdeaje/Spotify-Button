@@ -66,7 +66,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 350px;
+    width: 365px;
     height: fit-content;
     background-color: #1db954;
     color: white;
@@ -74,7 +74,7 @@ li {
     border: none;
     border-radius: 10px;
     font-size: 1.5em;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transition: background-color 400ms linear;
     position: absolute;
     left: 5%;
