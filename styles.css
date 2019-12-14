@@ -72,7 +72,7 @@ li {
     color: white;
     font-family: "circularBold";
     border: none;
-    border-radius: 34px;
+    border-radius: 10px;
     font-size: 1.5em;
     letter-spacing: 5px;
     transition: background-color 400ms linear;
