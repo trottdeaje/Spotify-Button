@@ -72,7 +72,7 @@ li {
     color: white;
     font-family: "circularBold";
     border: none;
-    border-radius: 10px;
+    border-radius: 35px;
     font-size: 1.5em;
     letter-spacing: 2px;
     transition: background-color 400ms linear;
@@ -80,6 +80,9 @@ li {
     left: 5%;
     bottom: 25%;
     padding: 20px;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
 }
 
 
@@ -87,7 +90,9 @@ li {
     background-color: #1ed760;
     cursor: pointer;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
 }
 
 
